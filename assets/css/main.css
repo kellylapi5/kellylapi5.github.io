@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
 	Read Only by HTML5 UP
@@ -194,7 +194,7 @@ input,
 select,
 textarea {
   color: #888;
-  font-family: "Lato", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 16pt;
   font-weight: 400;
   line-height: 1.75em;
@@ -3490,4 +3490,8 @@ input[type="button"]:disabled,
   line-height: 1.4em;
   margin-top: 0.5em;
   color: #888;
+}
+
+.texte-justifie {
+  text-align: justify;
 }
