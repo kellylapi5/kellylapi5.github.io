@@ -30,11 +30,12 @@
       <nav id="nav">
         <ul>
           <li><a href="#one" class="active">À propos</a></li>
-          <li><a href="#two">Mes projets</a></li>
+          <li><a href="#two">Mes implications</a></li>
           <li><a href="#three">Mes compétences</a></li>
           <li><a href="#four">Mon CV</a></li>
-          <li><a href="#five">Galerie photos</a></li>
-          <li><a href="#six">Contact</a></li>
+          <li><a href="#five">Mes projets</a></li>
+          <li><a href="#six">Galerie photos</a></li>
+          <li><a href="#seven">Contact</a></li>
         </ul>
       </nav>
       <footer>
@@ -83,7 +84,7 @@
         <!-- Two -->
         <section id="two">
           <div class="container">
-            <h3>Mes projets</h3>
+            <h3>Mes implications</h3>
             <p>
               Voici une sélection des projets présents ou passés que j'ai réalisés dans le cadre
               ou en parallèle de mes études. 
@@ -176,6 +177,49 @@
 <!-- Five -->
 <section id="five">
   <div class="container">
+    <h3>Mes projets</h3>
+    <p>
+      Voici deux projets réalisés dans le cadre de mes études.
+    </p>
+
+    <!-- Capsule vidéo -->
+    <h4>Capsule vidéo : [Présentation d'un outil numérique: JSTOR]</h4>
+  
+    <div id="capsule-zone" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:6px; cursor:pointer;">
+      <img src="images/apercu-jstor.jpg" alt="Aperçu de la capsule vidéo"
+           style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;" />
+      <span style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:80px; height:80px; border-radius:50%; background:rgba(0,0,0,0.65); color:#fff; font-size:2em; line-height:80px; text-align:center;">▶</span>
+    </div>
+
+    <p style="margin-top:1em;">
+      <a href="images/Capsule.jstor.mp4" download class="button">Télécharger la capsule (MP4)</a>
+    </p>
+
+    <!-- Travail de recherche -->
+    <h4 style="margin-top:2em;">Travail de recherche : [titre du travail]</h4>
+    <p>
+      [Une ou deux phrases : la question de recherche, le sujet et la session.]
+    </p>
+    <p>
+      <a href="assets/travail-recherche.pdf" target="_blank" class="button">Consulter le travail de recherche (PDF)</a>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('capsule-zone').addEventListener('click', function () {
+      this.style.cursor = 'default';
+      this.innerHTML =
+        '<video controls autoplay style="position:absolute; top:0; left:0; width:100%; height:100%;">' +
+        '<source src="images/capsule-jstor.mp4" type="video/mp4">' +
+        'Votre navigateur ne peut pas lire cette vidéo.' +
+        '</video>';
+    });
+  </script>
+</section>
+
+<!-- Six -->
+<section id="six">
+  <div class="container">
     <h3>Galerie photos</h3>
     <p>
       Quelques images d'éléments qui me représentent en dehors de la sphère professionnelle!
@@ -210,8 +254,8 @@
 </section>
 
 
-<!-- Six -->
-        <section id="six">
+<!-- Seven -->
+        <section id="seven">
           <div class="container">
             <h3>Me joindre</h3>
             <p>
